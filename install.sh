@@ -16,7 +16,7 @@ apt-get -y install build-essential python-dev python-pip python-pygame superviso
 
 echo "Installing hello_video..."
 echo "========================="
-git clone https://github.com/adafruit/pi_hello_video.git
+git clone --depth=1 https://github.com/adafruit/pi_hello_video.git
 cd pi_hello_video
 ./rebuild.sh
 cd hello_video
