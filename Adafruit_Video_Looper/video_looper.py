@@ -197,7 +197,7 @@ class VideoLooper(object):
         # If there are movies to play show a countdown first (if OSD enabled),
         # or if no movies are available show the idle message.
         if playlist.length() > 0:
-            self._animate_countdown(playlist)
+            self._animate_countdown(playlist, 0)
             self._blank_screen()
         else:
             self._idle_message()
